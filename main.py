@@ -109,12 +109,12 @@ if __name__ == '__main__':
         #   Load data sample
         if demo == 0:
             plotName = 'Sample 1'
-            ecg = io.loadmat('ecgdemodata1.mat')['ecg'][0]
-            samplingRate = io.loadmat('ecgdemodata1.mat')['samplingrate'][0, 0]
+            ecg = io.loadmat('data\\ecgdemodata1.mat')['ecg'][0]
+            samplingRate = io.loadmat('data\\ecgdemodata1.mat')['samplingrate'][0, 0]
         elif demo == 1:
             plotName = 'Sample 2'
-            ecg = io.loadmat('ecgdemodata2.mat')['ecg'][0]
-            samplingRate = io.loadmat('ecgdemodata2.mat')['samplingrate'][0, 0]
+            ecg = io.loadmat('data\\ecgdemodata2.mat')['ecg'][0]
+            samplingRate = io.loadmat('data\\ecgdemodata2.mat')['samplingrate'][0, 0]
 
         #   Remove lower frequencies
         fresult = np.fft.fft(ecg)
